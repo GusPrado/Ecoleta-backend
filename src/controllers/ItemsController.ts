@@ -12,7 +12,8 @@ class ItemsController {
       return {
         id: item.id,
         title: item.title,
-        image_url: `http://localhost:3333/uploads/${item.image}`
+        // changed localhost to get data from Expo (physical device)
+        image_url: `http://192.168.168.53:3333/uploads/${item.image}`
       }
     })
   
